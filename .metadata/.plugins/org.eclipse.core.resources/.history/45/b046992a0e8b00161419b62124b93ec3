@@ -1,0 +1,68 @@
+import java.util.Random;
+
+/**
+ * @author mkab
+ *
+ */
+public class Gene implements Cloneable {
+
+    private Object allele;
+
+    public Gene(){
+        super();
+    }
+    public Gene(Object allele){
+        super();
+        this.allele = allele;
+    }
+
+    /**
+     * Randomly selects a trait from trait1 or trait2 and returns a new Gene with that trait
+     * @param trait1
+     * @param trait2
+     * 
+     * @return a new Gene
+     */
+    public Gene randomAllele(Object trait1, Object trait2){
+        Object allele = null;
+        Random rand = new Random();
+        int i = rand.nextInt(2);// generate between 0 and 2: only 2 possibilities: 0 or 1
+        switch(i){
+        case 0:
+            allele = trait1;
+            break;
+        case 1:
+            allele = trait2;
+            break;
+        }
+        return new Gene(allele);
+    }
+
+
+    public Gene clone() throws CloneNotSupportedException{
+        Gene g;
+        g = (Gene) super.clone();
+        return g;
+    }
+    /**
+     * @param allele the allele to set
+     */
+    public void setAllele(Object allele) {
+        this.allele = allele;
+    }
+
+    /**
+     * @return the allele
+     */
+    public Object getAllele() {
+        return allele;
+    }
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+        return "Gene [allele=" + allele +"]";
+    }
+}

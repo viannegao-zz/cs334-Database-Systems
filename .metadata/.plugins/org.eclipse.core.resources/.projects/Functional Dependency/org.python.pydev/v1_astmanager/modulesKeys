@@ -1,0 +1,6 @@
+MODULES_MANAGER_V2
+Decomposec.Decom|/Users/vianne/Documents/workspace/Database Systems/Functional Dependency/Decomposec/Decom.py
+Decomposec.__init__|/Users/vianne/Documents/workspace/Database Systems/Functional Dependency/Decomposec/__init__.py
+closure|/Users/vianne/Documents/workspace/Database Systems/Functional Dependency/closure.py
+decompose|/Users/vianne/Documents/workspace/Database Systems/Functional Dependency/decompose.py
+decomposeBCNF|/Users/vianne/Documents/workspace/Database Systems/Functional Dependency/decomposeBCNF.py
