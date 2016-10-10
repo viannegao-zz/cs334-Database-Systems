@@ -1,6 +1,0 @@
-INDEX VERSION 1.127+/Users/vianne/Documents/workspace/Database Systems/.metadata/.plugins/org.eclipse.jdt.core
-3025908243.index
-820718315.index
-24921062.index
-861255418.index
-3791349562.index

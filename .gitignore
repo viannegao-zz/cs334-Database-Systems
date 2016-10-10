@@ -1,3 +1,7 @@
 *.pdf
 *.class
 *.DS_store
+.metadata
+.recommenders
+*.tmp
+
